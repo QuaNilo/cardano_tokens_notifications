@@ -9,7 +9,7 @@ pub struct TokenResponse {
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Info {
     pub address: Address,
-    pub decimalPlaces: u32,
+    pub decimal_places: Option<u32>,
     pub description: Option<String>,
     pub image: Option<String>,
     pub symbol: Option<String>,
@@ -22,7 +22,7 @@ pub struct Info {
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Address {
     pub name: Option<String>,
-    pub policyId: Option<String>,
+    pub policy_id: Option<String>,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
